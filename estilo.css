@@ -1,0 +1,166 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(images/main-bg.jpg) repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13pt;
+	color: #B0B0B0;
+}
+
+h1, p {
+    float: left;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;}
+
+h3 {
+    border: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+	width: auto;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.container-block {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+    width: auto;	
+}
+
+img.border {
+	border: 5px solid rgba(255,255,255,.10);
+}
+
+img.alignleft {
+	float: left;
+	margin-right: 30px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** LIST STYLE 1 */
+
+ul.style1 {
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	clear: both;
+	margin-bottom: 25px;
+	padding: 30px 0px 40px 0px;
+	border-top: 1px solid #000000;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+ul.style1 h3 {
+	padding-bottom: 5px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+ul.style1 p {
+	line-height: 150%;
+}
+
+ul.style1 .button-style {
+	float: left;
+	margin-top: 0px;
+}
+
+ul.style1 .first {
+	padding-top: 0px;
+	border-top: none;
+	box-shadow: none;
+}
+
+/** HEADER */
+
+#header-wrapper
+{
+    width: auto;
+	overflow: hidden;
+    margin-bottom: 20px;
+	background: rgba(0,0,0,0.70);
+}
+
+#header {
+	overflow: hidden;
+}
+
+/** PAGE */
+
+#page {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+/** CONTENT */
+
+#content {
+	float: left;
+	width: 600px;
+	padding: 40px;
+	background: rgba(0,0,0,0.70);
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .container-block {
+        flex-direction: column;
+    }
+
+    #header {
+        font-size: 7pt;
+    }
+
+    body {
+        font-size: 9pt;
+    }
+
+    h3 {
+        border: 2px;
+    }
+
+    #content {
+        width: fit-content;
+    }
+
+    #header {
+        width: fit-content;
+    }
+
+    img.aligncenter {
+        width: 150px;
+        height: 150px;
+    }
+}
