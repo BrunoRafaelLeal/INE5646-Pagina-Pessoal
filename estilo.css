@@ -18,7 +18,8 @@ h1, p {
     float: left;
     padding: 5px;
     margin-left: auto;
-    margin-right: auto;}
+    margin-right: auto;
+}
 
 h3 {
     border: 5px;
@@ -120,11 +121,22 @@ ul.style1 .first {
 	margin-bottom: 20px;
 }
 
+#page-bottom {
+	overflow: hidden;
+}
+
 /** CONTENT */
 
 #content {
 	float: left;
-	width: 600px;
+	width: 1200px;
+	padding: 40px;
+	background: rgba(0,0,0,0.70);
+}
+
+#content-bottom {
+	float: left;
+	width: 1200px;
 	padding: 40px;
 	background: rgba(0,0,0,0.70);
 }

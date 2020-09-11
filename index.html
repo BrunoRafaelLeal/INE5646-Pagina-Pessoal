@@ -6,7 +6,8 @@
         <meta charset="utf-8">
         <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
         <link href="estilo.css" rel="stylesheet" type="text/css" media="all" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "text/javascript" src = script.js></script>
     </head>
 
     <body>
@@ -19,19 +20,37 @@
             <div id="content">
                 <div>
                     <ul class="style1">
-                        <h3><em><img src="images/minhaImagem.jpg" alt="" width="250" height="250" class="aligncenter border"/></em></h3>
+                        <h3> <em> <img src="images/minhaImagem.jpg" alt="" width="250" height="250" class="aligncenter border"/> </em> </h3>
                         <li class="first">   
-                            <p> <strong> Curso :</strong> Sistemas da Informação </p>
-                            <p> <strong> E-mail :</strong> <a href="mailto:brunoh.rafael.leal@gmail.com"> brunoh.rafael.leal@gmail.com</a>  </p>
-                            <p> <strong> Interesses :</strong> Dormir, jogar, estudar </p>
-                            <li> Comecei a estudar na UFSC no ano de 2017, no primeiro semestre.</li>
-                            <li> Moro em Paulo Lopes, próximo a Garopaba.</li>
-                            <li> Tenho 2 medalhas, uma prata e um ouro, por jogar xadrez intermunicipal.</li>
-                            <li> Amo animais, não consigo decidir entre cachorros e gatos.</li> 
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>    
+        </div>
+        <div id="page-bottom" class="container-block">
+            <div id="content-bottom">
+                <div>
+                    <form>
+                        <h4>Os meus hobbies</h4>
+                        <input id="inputHobbies" type="text" placeholder="Meus Hobbies">
+                        <button id="insertItemHobbies">Adicionar</button>
+                    </form>
+                    <ul id="hobbieList"> </ul>
+                    <form>
+                        <h4>O que eu aprendi</h4>
+                        <input id="inputLearn" type="text" placeholder="O que eu aprendi">
+                        <button id="addLearn">Adicionar</button>
+                    </form>
+                    <ul id="style1"> </ul>
+                </div>
+            </div>
+        </div>        
+        <script src="./script.js"></script>    
     </body>
 </html>   
